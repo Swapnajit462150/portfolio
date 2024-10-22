@@ -1,0 +1,557 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    height: 50px;
+    background-color: rgb(28, 105, 141);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: beige;
+    font-size: 18px;
+    padding: 0px 15%;
+    position: sticky;
+    top: 0;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+    margin-left: 2vw;
+}
+.bars{
+   margin-top: 5px;
+}
+h5{
+    margin-left: 5%;
+    margin-top: 10px;
+
+}
+body{
+    background-color: rgb(253, 251, 251);
+    
+}
+.navlogo{
+    font-size: 24px;
+    text-transform:uppercase ;
+}
+.navlogo{
+    -webkit-animation-name: fa-beat;
+    animation-name: fa-beat;
+    -webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+    -webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+    -webkit-animation-duration: var(--fa-animation-duration, 4s);
+    animation-duration: var(--fa-animation-duration, 4s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+ nav .link{
+   display: flex;
+}
+
+ nav .link li {
+    list-style-type: none;
+    margin-left: 5%;
+   text-decoration: none;
+}
+nav .link li a{
+    text-decoration: none;
+}
+.bars{
+    display: none;
+}
+.menubar{
+    display: none;
+    position: sticky;
+    top: 35px;
+    background-color: rgb(28, 105, 141);  
+    padding: 5px 0px ; 
+}
+.menubar a{
+    text-decoration: none;
+    padding: 7px;
+    color: white;
+
+}
+.menubar p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+#home{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    user-select: none;   
+}
+
+@keyframes animate{
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+.intro{
+   
+    color: rgb(22, 21, 21);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro p{
+    font-size: 20px;
+}
+.intro span{
+    color: blue;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic{
+    
+    border: 10px solid rgb(107, 105, 105);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-color: rgb(156, 139, 83);
+    animation: liquid 20s ease-in-out infinite;
+   
+}
+@keyframes liquid{
+    0%{
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        background-size: 100% 100%;
+    }
+    50%{
+        border-radius:  30% 60% 60% 40% / 50% 60% 30% 60%;
+        background-size: 300% 150%;
+    }
+    100%{
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        background-size: 100% 100%;
+    }
+} 
+.pic img{
+    border-radius: 50%;
+    height: 40vh;
+    
+    
+}
+.pic img:hover{
+    transform: scale(1.02);
+}
+#about{
+    margin: 10%;
+    padding-top: 10%;
+}
+#about h1{
+    text-decoration: underline;
+    margin-bottom: 15px; 
+}
+#about #aboutp{
+    font-size: 20px;
+    color: grey;
+}
+
+.acskill{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: fit-content;
+    justify-content: center;
+}
+
+.mca span{
+    color:  blue;
+}
+.acskill h3{
+    text-decoration: underline; 
+}
+.exp{
+    width: 70%;
+    margin: auto;
+    
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 15px;
+    margin-bottom: 20px;
+}
+
+.box{
+   padding: 7px;
+   box-shadow: 0 0 2px 2px gray;
+   border-radius: 10px;
+    text-align: center;
+    background-color: rgb(245, 241, 241);
+}
+.box:hover{
+    transform: scale(1.02);
+}
+#cvdiv{
+    text-align: center;
+}
+#cvbtn{
+    padding: 5px 10px;
+    background-color: rgb(153, 40, 40);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+#cvbtn:hover{
+   background-color: rgb(211, 15, 15);
+}
+.skillmain h2{
+    text-align: center;
+    margin: 20px;
+    text-decoration: underline;
+}
+#skills{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.skill{
+    text-align: center;  
+}
+.skill img{
+    border-radius: 50%;
+    height: 80px;
+}
+.skill img:hover{
+    transform: scale(1.1);
+}
+#project{
+    margin: 10%;
+    padding-top: 10%;
+}
+#project #projecth3{
+    text-align: center;
+}
+#project h1{
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.liveproject{
+    box-shadow:  0 5px 10px  gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+#projectphoto{
+    display: flex;
+    justify-content: space-between;
+}
+.liveproject h2,.liveproject h3{
+    text-align: center;
+    margin-top: 15px;
+}
+.liveproject p{
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+}
+#easytohirepic{
+    margin-right: 10px;
+}
+#scorediv{
+    padding: 10px;
+    box-shadow:  0 5px 10px  gray;
+    border-radius: 10px;
+}
+#scorediv h3 ,#scorediv h2{
+    text-align: center;
+}
+#scorediv h2{
+    margin-bottom: 15px;
+}
+#scorediv p{
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+
+}
+#showmore{
+    display: none;
+}
+#showMoreBtn ,#showLessBtn {
+    background-color: rgb(153, 40, 40);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+#showMoreBtn ,#showLessBtn:hover{
+    background-color: rgb(211, 15, 15);
+}
+.miniproject{
+   display: flex;
+   justify-content: space-between;
+    margin-top: 15px;
+}
+.miniproject #minidiv1 ,#minidiv2{
+    padding: 10px;
+    box-shadow:  0 5px 10px  gray;
+    border-radius: 10px;
+}
+.miniproject #minidiv1{
+    margin-right: 10px;
+}
+#miniprojecth{
+    margin: 10px 0px;
+    text-decoration: underline;
+}
+.miniproject h3{
+    text-align: center;
+}
+.miniproject p{
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+
+}
+
+#service{
+    margin: 10%;
+    padding-top: 10%;
+}
+#service h1{
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.webdesign{
+    text-align: center;
+    padding: 10px;
+    box-shadow:  0 5px 10px  gray;
+    border-radius: 10px;
+}
+.webdesign i{
+    font-size: 30px;
+    color: rgb(24, 50, 105);
+}
+#contacth{
+   text-align: center;
+   text-decoration: underline;
+}
+#contact1stdiv{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    margin: 2% 20%;
+}
+#contact1stdiv div{
+    text-align: center;
+    padding: 10px;
+    box-shadow:  0 5px 10px  gray;
+    border-radius: 10px;
+}
+#contact1stdiv div:hover{
+    transform: scale(1.03);
+}
+a p{
+    color: black;
+}
+#contact1stdiv div i{
+    font-size: 20px;
+}
+form{
+    margin: auto;
+    width: 50%;
+    height: fit-content;
+    background-color: rgb(39, 55, 59);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+  }
+  
+  .smallinput, .biginput{
+    width: 100%;
+    outline:none;
+    border: 1px solid grey;
+    padding: 0px 6px 6px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  .smallinput:focus{
+    border: 1px solid blue;
+  }
+  .biginput:focus{
+    border: 1px solid blue;
+  }
+ 
+  .smallinput{
+    height: 30px;
+  }
+  
+  .biginput{
+    height: 60px;
+  }
+ 
+  button{
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-weight: 600;
+    cursor: pointer;
+
+  }#msgdiv{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #msg{
+    color: rgb(19, 111, 231);
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+   
+  }
+  #submitbtn{
+    border-radius: 10px;
+    border: none;
+  }
+  #submitbtn:hover{
+    background-color: rgb(206, 206, 203);
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    background-color:  rgb(1, 59, 87);
+    font-weight: 600;
+    align-items: center;
+  }
+  @media screen and  (max-width:480px) {
+    nav{
+       height: 35px;
+        padding: 0px 7%; 
+    }
+     .navlogo{
+        font-size: 20px;
+    }
+    nav .link{
+        display : none;
+    }
+    .bars{
+        display: block;
+    }
+    #home{
+        display: block;
+    }
+    .pic img{
+        border-radius: 50%;
+        height: 30vh;
+    } 
+    #about #aboutp{
+        font-size: 16px;
+    }
+    .box{
+        padding: 7px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 2px 2px gray;
+        border-radius: 10px;
+         text-align: center;
+         background-color: rgb(245, 241, 241);
+     }
+    #skills{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skill img{
+        border-radius: 50%;
+        height: 60px;
+    }
+    .liveproject p{
+        font-size: 16px;
+    }
+    #scorediv p{
+        font-size: 16px;
+    
+    }
+    .miniproject p{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .exp{
+        display: block;
+    }
+    .miniproject {
+        display: block;
+    }
+    .miniproject #minidiv1{
+        margin-right: 0px;
+    }
+    #contact1stdiv{
+        display: block;
+    }
+   form{
+    width: 80%;
+   }
+    #contact1stdiv div{
+    margin-bottom: 10px;
+    word-wrap: break-word;
+   }
+   button{
+    margin-top: 15px;
+    padding: 5px 10px;
+    font-weight: 600;
+
+  }
+   
+   
+  }
+
+  @media screen and (min-width:480px) and (max-width:800px){
+    #contact1stdiv{
+        display: block;
+    }
+    #contact1stdiv div{
+        margin-bottom: 10px;
+        
+       }
+    nav a{
+        font-size: 15px;
+        
+    }
+    .link a{
+        text-decoration: none;
+        color: white;
+        margin-left: 1vw;
+    }
+    nav .link li{
+        margin-left: 5%;
+    }
+    .navlogo{
+        font-size: 18px;
+    }
+}
+@media screen  and (min-width:481px){
+    .menubar{
+        position: absolute;
+        top: -100%;
+       }
+}
+ 
